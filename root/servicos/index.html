@@ -25,138 +25,150 @@
 <body>
 
     <!--    BARRA DE NAVEGACAO  -->
-    <nav>
-        <!--    LOGO    -->
-        <div class="nav-elem" id="nav-logo">
-            <img src="" alt="Logo">
+    <div id="bar">
+
+        <!-- Logo -->
+        <div class="navLogo">
+            <a href="../index.html"><img src="../assets/images/logo.png" alt="Logo"></a>
+        </div>
+        
+        <nav class="navBar">
+
+            <!-- Links desktop -->
+            <div class="navServers">
+                <a id="navServers" href="../servidores/index.html">SERVIDORES</a>
+                <ul>
+                    <a href="../servidores/hospedagem.html">
+                        <li class="serversLink">Hospedagem</li>
+                    </a>
+                    <a href="../servidores/backup.html">
+                        <li class="serversLink">Backup</li>
+                    </a>
+                    <a href="../servidores/email.html">
+                        <li class="serversLink">Email</li>
+                    </a>
+                </ul>
+            </div>
+
+            <div class="navServicos">
+                <a id="navServicos" href="index.html">SERVIÇOS LINUX</a>
+                <ul class="navDropServicos">
+                    <a href="administracao.html">
+                        <li class="servicosLink">Administração</li>
+                    </a>
+                    <a href="debian.html">
+                        <li class="servicosLink">Debian</li>
+                    </a>
+                    <a href="rpm.html">
+                        <li class="servicosLink">RPM</li>
+                    </a>
+                    <a href="outras.html">
+                        <li class="servicosLink">Outras</li>
+                    </a>
+                </ul>
+            </div>
+
+            <div class="navConsul">
+                <a id="navConsul" href="../consultoria/index.html">CONSULTORIA</a>
+                <ul class="navDropConsul">
+                    <a href="../consultoria/manutencao.html">
+                        <li class="consulLink">Manutenção</li>
+                    </a>
+                    <a href="../consultoria/visitas_tecnicas.html">
+                        <li class="consulLink">Visita</li>
+                    </a>
+                    <a href="../consultoria/migracao.html">
+                        <li class="consulLink">Migração</li>
+                    </a>
+                </ul>
+            </div>
+        </nav>
+
+        <div class="burger">
+            <div class="burger1"></div>
+            <div class="burger2"></div>
+            <div class="burger3"></div>
         </div>
 
-        <!--    PAGINAS     -->
-        <div class="nav-elem" id="nav-links">
-            <ul id="nav-list">
-                <div>
-                    <a>
-                        <li class="nav-servers" id="nav-pg1">
-                            SERVIDORES
-                        </li>
+        <!-- Botao -->
+        <button class="navLogin" href="#" onclick="showHeight()">
+            <div>IDENTIFIQUE-SE</div>
+        </button>
+
+        <!-- Links Mobile -->
+        <nav class="navBarMobile">
+            <div class="mNavServers">
+                <a>SERVERS</a>
+                <ul>
+                    <a href="../servidores/hospedagem.html">
+                        <li>Hospedagem</li>
                     </a>
-
-                    <!--    SUB-PAGINAS SERVIDORES  -->
-                    <ul class="nav-server" id="nav-sub1">
-                        <a>
-                            <li id="">
-                                HOSPEDAGEM
-                            </li>
-                        </a>
-
-                        <a>
-                            <li id="">
-                                BACKUP
-                            </li>
-                        </a>
-
-                        <a>
-                            <li>
-                                EMAIL
-                            </li>
-                        </a>
-
-                        <a>
-                            <li>
-                                DOMÍNIO
-                            </li>
-                        </a>
-                    </ul>
-                </div>
-
-                <div>
-                    <a>
-                        <li class="nav-linux" id="nav-pg2">
-                            SERVIÇOS LINUX
-                        </li>
+                    <a href="../servidores/backup.html">
+                        <li>Backup</li>
                     </a>
-
-                    <!--    SUB-PAGINAS SERVIÇOS LINUX  -->
-                    <ul class="nav-linux" id="nav-sub2">
-                        <a>
-                            <li id="">
-                                ADMINISTRAÇÃO
-                            </li>
-                        </a>
-
-                        <a>
-                            <li id="">
-                                DEBIAN BASED
-                            </li>
-                        </a>
-
-                        <a>
-                            <li>
-                                RPM
-                            </li>
-                        </a>
-
-                        <a>
-                            <li>
-                                OUTRAS
-                            </li>
-                        </a>
-                    </ul>
-                </div>
-
-                <div class="nav-colsul">
-                    <a>
-                        <li class="nav-consul" id="nav-pg3">
-                            CONSULTORIA
-                        </li>
+                    <a href="../servidores/email.html">
+                        <li>Email</li>
                     </a>
+                    <a href="../servidores/index.html">
+                        <li>Mais >></li>
+                    </a>
+                </ul>
+            </div>
 
-                    <!--    SUB-PAGINAS CONSULTORIA -->
-                    <ul class="nav-consul" id="nav-sub3">
-                        <a>
-                            <li id="">
-                                MANUTENÇÃO
-                            </li>
-                        </a>
+            <div class="mNavServicos">
+                <a>SEVIÇOS LINUX</a>
+                <ul>
+                    <a href="administracao.html">
+                        <li>Administração</li>
+                    </a>
+                    <a href="debian.html">
+                        <li>Debian</li>
+                    </a>
+                    <a href="rpm.html">
+                        <li>RPM</li>
+                    </a>
+                    <a href="rpm.html">
+                        <li>Outras</li>
+                    </a>
+                    <a href="index.html">
+                        <li>Mais >></li>
+                    </a>
+                </ul>
+            </div>
 
-                        <a>
-                            <li id="">
-                                VISITAS TÉCNICAS
-                            </li>
-                        </a>
+            <div class="mNavConsul">
+                <a>CONSULTORIA</a>
+                <ul>
+                    <a href="../consultoria/manutencao.html">
+                        <li>Manutenção</li>
+                    </a>
+                    <a href="../consultoria/visitas_tecnicas.html">
+                        <li>Visita</li>
+                    </a>
+                    <a href="../consultoria/migracao.html">
+                        <li>Migração</li>
+                    </a>
+                    <a href="../consultoria/index.html">
+                        <li>Mais >></li>
+                    </a>
+                </ul>
+            </div>
 
-                        <a>
-                            <li>
-                                MIGRAÇÃO
-                            </li>
-                        </a>
-                    </ul>
-                </div>
-
-                <a>
-                    <li id="nav-pg4">
-                        FALE CONOSCO
-                    </li>
-                </a>
-
-                <a>
-                    <li id="nav-pg5">
-                        SOBRE
-                    </li>
-                </a>
-            </ul>
-        </div>
-
-        <!--    LOGIN   -->
-        <div id="nav-login">
-            LOGIN/CADASTRO
-        </div>
-    </nav>
+            <button class="mNavLogin" href="#" onclick="showHeight()">
+                <div>IDENTIFIQUE-SE</div>
+            </button>
+        </nav>
+    </div>
+    
+    <!--    Script  -->
+    <script type="text/javascript" src="../assets/javascript/nav.js">
+        //CHAMA O ARQUIVO JAVASCRIPT 
+    </script>
 
 
     <!--    CONTEUDO PRINCIPAL   -->
     <header>
-        Serviços
+        <h1>Serviços</h1>
     </header>
 
 
@@ -180,7 +192,7 @@
                 Conheça nossos serviços de administração!
 
                 <br><br>
-                <a href="#">Saiba mais</a>
+                <a href="administracao.html">Saiba mais</a>
             </p>
         </section>
 
@@ -198,7 +210,7 @@
                 Debian GNU/Linux e seus derivados.
 
                 <br><br>
-                <a href="#">Saiba mais</a>
+                <a href="debian.html">Saiba mais</a>
             </p>
         </section>
 
@@ -216,7 +228,7 @@
                 sistemas operacionais.
 
                 <br><br>
-                <a href="#">Saiba mais</a>
+                <a href=rpm.html>Saiba mais</a>
             </p>
         </section>
 
@@ -234,7 +246,7 @@
                     quais trabalhamos nessa categoria.
 
                     <br><br>
-                    <a href="#">Saiba mais</a>
+                    <a href="outras.html">Saiba mais</a>
                 </p>
             </section>
 
@@ -243,7 +255,17 @@
 
     <!--        INFORMACOES DE COPYRIGHT        -->
     <footer>
-        André R. & Rodrigo A. | Copyrigth &copy; 2019
+        <!-- Copyright -->
+        <p>A. Raposo & R. Angelo | Copyrigth &copy; 2019</p>
+        <!-- Links -->
+        <ul>
+            <a href="#">
+                <li>Contato</li>
+            </a>
+            <a href="#">
+                <li>GitHub</li>
+            </a>
+        </ul>
     </footer>
 
 </body>

@@ -25,9 +25,7 @@ body {
     margin: 0px;
     padding: 0px;
     width: 100%;
-    background-color: white;
     overflow-x: hidden;
-    color: #111;
 }
 
 
@@ -72,7 +70,6 @@ body {
 .navBar ul {
     list-style: none;
     margin-top: -1px;
-    box-shadow: 0px 4px 8px 0px rgba(0,0,0,.1)
 }
 
 /*  REMOVE UNDERLINE DE LINKS  */
@@ -301,8 +298,21 @@ body {
         padding: 0px;
         margin: 0px;
     }
+    
+    header h1{
+        font-size: 70px;
+    }
 
+    section p{
+        width: 560px;
+    }
 
+    section img {
+        height: 315px;
+        width: 560px;
+    }
+
+    
     footer {
         position: relative;
     }
@@ -321,6 +331,8 @@ header {
     margin-left: auto;
     margin-right: auto;
     font-weight: bolder;
+    background-color: #333;
+    color: white;
 }
 
 
@@ -339,59 +351,41 @@ section {
     transition-duration: 0.5s;
     transition-delay: 0.1s;
     display: flex;
+    flex-direction: column;
     width: 80%;
-    height: 50vh;
+    height: auto;
     margin-bottom: 2.5%;
     margin-left: auto;
     margin-right: auto;
-    border: 2px solid #efefef;
-    background-color: white;
-    border-radius: 30px;
     justify-content: flex-start;
-    
-    
+    padding: 30px;
+    color: #111;
 }
 
 section p,
-img {
-    margin-left: 1.5%;
-    margin-right: 1.5%;
-    margin-top: auto;
-    margin-bottom: auto;
-}
-
-section a {
-    text-decoration: none;
+section img {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1.5%;
+    margin-bottom: 1.5%;
+    padding-top: 10px;
+    width: 640px;
+    text-align: justify;
+    line-height: 25px;
 }
 
 section img {
     transition-duration: 0.5s;
     transition-delay: 0.1s;
-    width: 45vh;
-    height: 45vh;
-    border-radius: 20px;
+    height: 360px;
+    width: 640px;
+    border-radius: 10px;
 }
 
-section:hover {
-    transition-duration: 0.5s;
-    transition-delay: 0.1s;
-    width: 85%;
-    height: 55vh;
-    background-color: #efefef;
-    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.15);
-}
-
-section:hover p{
-    font-size: 18px;
-    margin-left: 3%;
-    margin-right: 3%;
-}
-
-section:hover img{
-    transition-duration: 0.5s;
-    transition-delay: 0.1s;
-    width: 50vh;
-    height: 50vh;
+section h2{
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
 }
 
 /*      RODAPE      */
