@@ -2,6 +2,13 @@
 var burger = document.querySelector(".burger");
 var mNav = document.querySelector(".navBarMobile");
 var ctrl = 0;
+var toggleform = document.querySelector(".navUserId");
+var inpText = document.querySelector("#inpText");
+var inpSubmit = document.querySelector("#inpBut");
+var button = document.querySelector(".navLogin");
+var navWelcome = document.querySelector(".navWelcome");
+var userName = "";
+
 
 burger.addEventListener("click", () => {
     if (ctrl == 0) {
@@ -61,3 +68,24 @@ toggleConsul.addEventListener("click", () => {
         ctrlConsul = 0;
     }
 })
+
+function showForm() {
+    if (ctrl == 0) {
+        inpText.value = "";
+        toggleform.style.display = "block";
+        ctrl = 1;
+    } else {
+        toggleform.style.display = "none";
+        ctrl = 0;
+    }
+}
+
+function getName() {
+    inpSubmit.addEventListener("click", () => {
+        userName = inpText.value;
+        window.alert("Seja bem vindo " + userName);
+        toggleform.style.display = "none";
+        button.style.display = "none";
+        navWelcome.innerHTML = "Bem vindo, " + userName;
+    })
+}

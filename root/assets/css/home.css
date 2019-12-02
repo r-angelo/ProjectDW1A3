@@ -131,6 +131,14 @@ body {
     color: white;
 }
 
+.navWelcome{
+    color: white;
+    font-weight: bolder;
+    line-height: 40px;
+    text-transform: uppercase;
+    margin-right: 3vw;
+}
+
 /*  BOTAO DE LOGIN  */
 .navLogin {
     height: 40px;
@@ -149,6 +157,43 @@ body {
 .navLogin:hover {
     opacity: 1;
     cursor: pointer;
+}
+
+.navSubmit{
+    height: 30px;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 1vw;
+    padding-right: 1vw;
+    border-radius: 15px;
+    border: 2px solid white;
+    background-image: linear-gradient(to left, #8E54E9, #4776E6);
+    cursor: pointer;
+}
+
+.navUserId{
+    position:absolute;
+    top: 75px;
+    right: 5px;
+    padding: 10px;
+    height: 80px;
+    background-color: lightgray;
+    opacity: .9;
+    border-radius: 10px;
+    display: none;
+    
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+}
+
+input{
+    margin-bottom: 15px;
 }
 
 /* BARRA DE NAVEGACAO MOBILE */
@@ -252,7 +297,8 @@ body {
 
     .mNavServers ul,
     .mNavServicos ul,
-    .mNavConsul ul {
+    .mNavConsul ul,
+    .navWelcome{
         display: none;
     }
 
@@ -276,7 +322,7 @@ body {
         margin-bottom: auto;
         margin-top: 2.5vh;
         margin-left: auto;
-        margin-right: 12vw;
+        margin-right: 11vw;
         cursor: pointer;
         z-index: 100;
     }

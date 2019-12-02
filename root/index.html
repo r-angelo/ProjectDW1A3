@@ -9,11 +9,11 @@
 
     <!--    LINKS   -->
     <link rel="stylesheet" type="text/css" href="assets/css/home.css">
-    
+
     <!--    META TAGS    -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+
     <!-- TITULO -->
     <title>A&R Home</title>
 
@@ -31,7 +31,7 @@
         <div class="navLogo">
             <a href="index.html"><img src="assets/images/logo.png" alt="Logo"></a>
         </div>
-        
+
         <nav class="navBar">
 
             <!-- Links desktop -->
@@ -84,21 +84,31 @@
             </div>
         </nav>
 
+
+        <div class="navWelcome"></div>
+        <!-- Botao -->
+        <button class="navLogin" onclick="showForm()">
+            <div>IDENTIFIQUE-SE</div>
+        </button>
+
+        <div class="navUserId">
+            <form>
+                <input id="inpText" type="text" placeholder="Nome...">
+            </form>
+            <button class="navSubmit" id="inpBut" onclick="getName()">
+                Enviar
+            </button>
+        </div>
+
         <div class="burger">
             <div class="burger1"></div>
             <div class="burger2"></div>
             <div class="burger3"></div>
         </div>
-
-        <!-- Botao -->
-        <button class="navLogin" href="#" onclick="showHeight()">
-            <div>IDENTIFIQUE-SE</div>
-        </button>
-
         <!-- Links Mobile -->
         <nav class="navBarMobile">
             <div class="mNavServers">
-                <a >SERVERS</a>
+                <a>SERVERS</a>
                 <ul>
                     <a href="servidores/hospedagem.html">
                         <li>Hospedagem</li>
@@ -154,16 +164,18 @@
                 </ul>
             </div>
 
-            <button class="mNavLogin" href="#" onclick="showHeight()">
+            <button class="mNavLogin" onclick="mShowForm()">
                 <div>IDENTIFIQUE-SE</div>
             </button>
         </nav>
     </div>
-    
+
     <!--    Script  -->
     <script type="text/javascript" src="assets/javascript/nav.js">
         //CHAMA O ARQUIVO JAVASCRIPT 
     </script>
+
+    
 <!--
         CONTEUDO EM DESTAQUE
 -->
@@ -218,7 +230,7 @@
             </a>
         </ul>
     </footer>
-    
+
 </body>
 
 </html>
