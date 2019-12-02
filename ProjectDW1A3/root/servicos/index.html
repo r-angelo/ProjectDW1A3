@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<!-- 
+                        METADADOS DA PAGINA 
+-->
+
+<head>
+
+    <!--    LINKS   -->
+    <link rel="stylesheet" type="text/css" href="../assets/css/post.css">
+    <link href="https://fonts.googleapis.com/css?family=Abel&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Maven+Pro:900&display=swap" rel="stylesheet">
+    <title>Serviços</title>
+
+    <!--    META TAGS    -->
+    <meta charset="utf-8">
+
+</head>
+
+<!--
+                        CORPO DA PAGINA
+-->
+
+<body>
+
+    <!--    BARRA DE NAVEGACAO  -->
+    <div id="bar">
+
+        <!-- Logo -->
+        <div class="navLogo">
+            <a href="../index.html"><img src="../assets/images/logo.png" alt="Logo"></a>
+        </div>
+        
+        <nav class="navBar">
+
+            <!-- Links desktop -->
+            <div class="navServers">
+                <a id="navServers" href="../servidores/index.html">SERVIDORES</a>
+                <ul>
+                    <a href="../servidores/hospedagem.html">
+                        <li class="serversLink">Hospedagem</li>
+                    </a>
+                    <a href="../servidores/backup.html">
+                        <li class="serversLink">Backup</li>
+                    </a>
+                    <a href="../servidores/email.html">
+                        <li class="serversLink">Email</li>
+                    </a>
+                </ul>
+            </div>
+
+            <div class="navServicos">
+                <a id="navServicos" href="index.html">SERVIÇOS LINUX</a>
+                <ul class="navDropServicos">
+                    <a href="administracao.html">
+                        <li class="servicosLink">Administração</li>
+                    </a>
+                    <a href="debian.html">
+                        <li class="servicosLink">Debian</li>
+                    </a>
+                    <a href="rpm.html">
+                        <li class="servicosLink">RPM</li>
+                    </a>
+                    <a href="outras.html">
+                        <li class="servicosLink">Outras</li>
+                    </a>
+                </ul>
+            </div>
+
+            <div class="navConsul">
+                <a id="navConsul" href="../consultoria/index.html">CONSULTORIA</a>
+                <ul class="navDropConsul">
+                    <a href="../consultoria/manutencao.html">
+                        <li class="consulLink">Manutenção</li>
+                    </a>
+                    <a href="../consultoria/visitas_tecnicas.html">
+                        <li class="consulLink">Visita</li>
+                    </a>
+                    <a href="../consultoria/migracao.html">
+                        <li class="consulLink">Migração</li>
+                    </a>
+                </ul>
+            </div>
+        </nav>
+
+        <div class="burger">
+            <div class="burger1"></div>
+            <div class="burger2"></div>
+            <div class="burger3"></div>
+        </div>
+
+        <!-- Botao -->
+        <button class="navLogin" href="#" onclick="showHeight()">
+            <div>IDENTIFIQUE-SE</div>
+        </button>
+
+        <!-- Links Mobile -->
+        <nav class="navBarMobile">
+            <div class="mNavServers">
+                <a>SERVERS</a>
+                <ul>
+                    <a href="../servidores/hospedagem.html">
+                        <li>Hospedagem</li>
+                    </a>
+                    <a href="../servidores/backup.html">
+                        <li>Backup</li>
+                    </a>
+                    <a href="../servidores/email.html">
+                        <li>Email</li>
+                    </a>
+                    <a href="../servidores/index.html">
+                        <li>Mais >></li>
+                    </a>
+                </ul>
+            </div>
+
+            <div class="mNavServicos">
+                <a>SEVIÇOS LINUX</a>
+                <ul>
+                    <a href="administracao.html">
+                        <li>Administração</li>
+                    </a>
+                    <a href="debian.html">
+                        <li>Debian</li>
+                    </a>
+                    <a href="rpm.html">
+                        <li>RPM</li>
+                    </a>
+                    <a href="rpm.html">
+                        <li>Outras</li>
+                    </a>
+                    <a href="index.html">
+                        <li>Mais >></li>
+                    </a>
+                </ul>
+            </div>
+
+            <div class="mNavConsul">
+                <a>CONSULTORIA</a>
+                <ul>
+                    <a href="../consultoria/manutencao.html">
+                        <li>Manutenção</li>
+                    </a>
+                    <a href="../consultoria/visitas_tecnicas.html">
+                        <li>Visita</li>
+                    </a>
+                    <a href="../consultoria/migracao.html">
+                        <li>Migração</li>
+                    </a>
+                    <a href="../consultoria/index.html">
+                        <li>Mais >></li>
+                    </a>
+                </ul>
+            </div>
+
+            <button class="mNavLogin" href="#" onclick="showHeight()">
+                <div>IDENTIFIQUE-SE</div>
+            </button>
+        </nav>
+    </div>
+    
+    <!--    Script  -->
+    <script type="text/javascript" src="../assets/javascript/nav.js">
+        //CHAMA O ARQUIVO JAVASCRIPT 
+    </script>
+
+
+    <!--    CONTEUDO PRINCIPAL   -->
+    <header>
+        <h1>Serviços</h1>
+    </header>
+
+
+    <main>
+        <!--        POSTS
+            IMAGEM ESQUERDA EM POSTS PAR
+            IMAGEM DIREITA POSTS IMPARES
+        -->
+
+        <section>
+            <img src="../assets/images/admin_service.jpg" alt="Administração">
+            <p>
+                <b>ADMINISTRAÇÃO</b>
+
+                <br><br>
+                Prestamos serviços de administração em sistemas GNU/Linux: instalação
+                e configuração, gerenciamento de usuários e de permissões, backup, acesso
+                remoto, servidores de rede e muito mais.
+
+                <br><br>
+                Conheça nossos serviços de administração!
+
+                <br><br>
+                <a href="administracao.html">Saiba mais</a>
+            </p>
+        </section>
+
+        <section>
+            <img src="../assets/images/debian_service.png" alt="Debian">
+            <p>
+                <b>DEBIAN</b>
+
+                <br><br>
+                O Debian GNU/Linux forma a maior família das distribuições Linux,
+                detendo grande parte dos usuários desse sistema operacional.
+
+                <br><br>
+                Oferecemos serviços relacionados ao suporte e à implantação de sistemas
+                Debian GNU/Linux e seus derivados.
+
+                <br><br>
+                <a href="debian.html">Saiba mais</a>
+            </p>
+        </section>
+
+        <section>
+            <img src="../assets/images/rpm_service.jpeg" alt="RPM">
+            <p>
+                <b>RPM</b>
+
+                <br><br>
+                Outra família de distribuições GNU/Linux importante é a da Red Hat, formada
+                por RHEL, CentOS, Fedora e seus derivados.
+
+                <br><br>
+                Também fornecemos serviços dedicados à implantação e assistência desses
+                sistemas operacionais.
+
+                <br><br>
+                <a href=rpm.html>Saiba mais</a>
+            </p>
+        </section>
+
+        <section>
+                <img src="../assets/images/others_service.png" alt="Outras">
+                <p>
+                    <b>OUTRAS</b>
+
+                    <br><br>
+                    Grande parte das distribuições GNU/Linux que não são das famílias
+                    Debian ou Red Hat também contam com nossos serviços especializados.
+
+                    <br><br>
+                    Arch Linux, Gentoo e Slackware são algumas das distribuições com as
+                    quais trabalhamos nessa categoria.
+
+                    <br><br>
+                    <a href="outras.html">Saiba mais</a>
+                </p>
+            </section>
+
+    </main>
+
+
+    <!--        INFORMACOES DE COPYRIGHT        -->
+    <footer>
+        <!-- Copyright -->
+        <p>A. Raposo & R. Angelo | Copyrigth &copy; 2019</p>
+        <!-- Links -->
+        <ul>
+            <a href="#">
+                <li>Contato</li>
+            </a>
+            <a href="#">
+                <li>GitHub</li>
+            </a>
+        </ul>
+    </footer>
+
+</body>
+
+</html>
